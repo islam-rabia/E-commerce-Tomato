@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/E-commerce-Tomato/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tomato App</title>
+    <script type="module" crossorigin src="/E-commerce-Tomato/assets/details-CFUKsvQL.js"></script>
+    <link rel="modulepreload" crossorigin href="/E-commerce-Tomato/assets/search-product-CkJgnzyF.js">
+    <link rel="modulepreload" crossorigin href="/E-commerce-Tomato/assets/show-sweet-alert-CPHbVcik.js">
+    <link rel="modulepreload" crossorigin href="/E-commerce-Tomato/assets/wishList-management-Cf47GKFr.js">
+    <link rel="stylesheet" crossorigin href="/E-commerce-Tomato/assets/search-product-DNLjlGr6.css">
+  </head>
+  <body>
+    <header id="header" class="fixed top-0 left-0 z-[2] w-full">
+      <div
+        class="header__container gap-[10px] max-w-[1400px] w-full mx-auto px-[20px] flex flex-col items-center sm:px-[40px] lg:px-[60px] xl:px-[150px] py-[13px] lg:flex-row lg:justify-between"
+      >
+        <div class="flex justify-between w-full items-center relative">
+          <div class="header__logo">
+            <a href="index.html">
+              <h1 class="text-[#fd5c38] text-xl font-bold lg:text-[26px]">
+                Tomato.
+              </h1>
+            </a>
+          </div>
+          <div
+            class="navbar z-10 h-screen w-full hidden bg-[#0000009c] fixed top-0 left-0"
+          ></div>
+          <div class="header__icons flex items-end gap-[14px]">
+            <a href="shopping-cart.html" class="shopping-cart flex relative">
+              <span
+                class="absolute bg-[#fd5c38] h-5 w-5 text-center text-white text-sm rounded-[30px] top-[-9px] right-[-9px]"
+                >0</span
+              >
+              <i
+                data-lucide="shopping-cart"
+                class="text-gray-700 text-xl w-[17px]"
+              ></i>
+            </a>
+            <div
+              class="text-[#000000de] text-[14px] flex flex-col items-center"
+            >
+              <p class="">My Cart</p>
+              <span class="cart text-sm lg:block">$0.00</span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="border-2 border-[#fd5c38] rounded-md flex w-full max-w-[341px] sm:absolute sm:left-[50%] sm:translate-x-[-50%] sm:max-w-[359px]"
+        >
+          <input
+            class="search-input px-2 py-2 rounded-tl-md rounded-bl-md w-full placeholder:text-[14px] focus:outline-0 text-[#000000e7] text-[14px]"
+            type="text"
+            placeholder="Search for products..."
+          />
+          <button
+            type="search"
+            class="bg-[#fd5c38] py-2 px-6 text-sm text-[#000000cc] cursor-pointer"
+          >
+            Search
+          </button>
+        </div>
+      </div>
+
+      <hr class="border-[#d3d3d343]" />
+      <div
+        class="flex justify-between items-center py-[7px] max-w-[1400px] w-full mx-auto px-[20px] sm:px-[40px] lg:px-[60px] xl:px-[150px]"
+      >
+        <button class="open-menu cursor-pointer md:hidden">
+          <i
+            class="w-[18px] h-[18px] text-[#4a4a4a]"
+            data-lucide="chart-bar"
+          ></i>
+        </button>
+        <div
+          class="section-navbar w-full bg-[#ffffff] gap-[10px] px-[5px] py-[5px] fixed top-0 left-0 z-20 flex-col items-baseline md:bg-transparent md:flex-row flex justify-end md:items-center md:gap-[21px] md:static md:w-fit"
+        >
+          <div class="header__menu flex justify-end ml-auto md:hidden">
+            <button title="close menu" class="close-menu cursor-pointer">
+              <i data-lucide="x" class="w-[17px] text-[#fd5c38]"></i>
+            </button>
+          </div>
+          <nav class="header__nav md:m-0">
+            <ul
+              class="header__menu__list grid gap-[5px] mb-[10px] md:mb-0 md:flex md:gap-[35px]"
+            >
+              <li class="text-[#4a4a4a]"><a href="./index.html">home</a></li>
+              <li class="text-[#4a4a4a]"><a href="./menu.html">menu</a></li>
+              <li class="text-[#4a4a4a]">
+                <a href="./mobileApp.html">mobile app</a>
+              </li>
+              <li class="text-[#4a4a4a]"><a href="#">address</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__account flex gap-[18px] items-center">
+          <button
+            class="sign-account flex gap-[6px] justify-center items-center text-[13px] h-[37px] py-[5px] px-[13px] rounded-[7px] bg-[#fd5c38] cursor-pointer"
+          >
+            <span class="text-[13px]">Login in</span>
+            <i
+              data-lucide="log-in"
+              class="w-[18px] h-[18px] text-[#2b2b2bcc]"
+            ></i>
+          </button>
+          <div
+            class="my-account gap-[2px] text-[#4a4a4a] text-[14px] flex items-center"
+          >
+            <i data-lucide="user"></i>
+            <div class="flex flex-col justify-center">
+              <span class="user-name"></span>
+              <span class="email"></span>
+            </div>
+          </div>
+          <button
+            class="loginOut-account flex gap-[6px] text-[13px] justify-center items-center h-[37px] py-[5px] px-[13px] rounded-[7px] bg-[#fd5c38] cursor-pointer"
+          >
+            <span class="text-[13px]">Login out</span>
+            <i
+              data-lucide="log-out"
+              class="w-[18px] h-[18px] text-[#2b2b2bcc]"
+            ></i>
+          </button>
+        </div>
+      </div>
+      <hr class="border-[#d3d3d343]" />
+    </header>
+
+    <section
+      id="form__validation"
+      class="bg-[#0000006b] z-[3] w-full h-screen fixed top-0 left-0 flex justify-center items-center"
+    >
+      <div
+        class="section__signUp h-screen items-center grid w-full overflow-hidden max-w-[300px]"
+      >
+        <div
+          class="form__signUp h-fit bg-white py-[20px] px-[20px] rounded-[15px] w-[300px]"
+        >
+          <form action="">
+            <div class="logo__form flex justify-between items-center">
+              <h3 class="text-xl font-medium">Sign Up</h3>
+              <div class="close__form cursor-pointer">
+                <i data-lucide="x" class="w-[18px] h-[18px] text-red-500"></i>
+              </div>
+            </div>
+            <div class="forms mt-[15px] grid gap-[10px]">
+              <div class="firstName__form flex flex-col gap-[5px]">
+                <label for="firstName" class="firstName text-[#2d2d2d]"
+                  >firstName:</label
+                >
+                <input
+                  id="firstName"
+                  type="text"
+                  placeholder="Enter the firstName"
+                  name="firstName"
+                  autocomplete="given-name"
+                  class="rounded-[8px] text-[#4e4d4d] border-[1px] border-[#9b9b9b78] border-solid py-[4px] px-[5px] text-[15px]"
+                />
+              </div>
+              <div class="lastName__form flex flex-col gap-[5px]">
+                <label for="lastName" class="lastName text-[#2d2d2d]"
+                  >lastName:</label
+                >
+                <input
+                  id="lastName"
+                  type="text"
+                  placeholder="Enter the lastName"
+                  name="lastName"
+                  autocomplete="family-name"
+                  class="rounded-[8px] text-[#4e4d4d] border-[1px] border-[#9b9b9b78] border-solid py-[4px] px-[5px] text-[15px]"
+                />
+              </div>
+              <div class="email__form flex flex-col gap-[5px]">
+                <label for="email" class="email text-[#2d2d2d]">Email:</label>
+                <input
+                  id="email"
+                  type="text"
+                  placeholder="Enter the email"
+                  name="email"
+                  autocomplete="email"
+                  class="rounded-[8px] text-[#4e4d4d] border-[1px] border-[#9b9b9b78] border-solid py-[4px] px-[5px] text-[15px]"
+                />
+              </div>
+              <div class="password__form flex flex-col gap-[5px]">
+                <label for="password" class="password text-[#2d2d2d]"
+                  >Password:</label
+                >
+                <input
+                  id="password"
+                  type="password"
+                  placeholder="Enter the password"
+                  name="password"
+                  autocomplete="new-password"
+                  class="rounded-[8px] text-[#4e4d4d] border-[1px] border-[#9b9b9b78] border-solid py-[4px] px-[5px] text-[15px]"
+                />
+              </div>
+            </div>
+            <button
+              class="submit cursor-pointer bg-[#fd5c38] text-white w-full py-[7px] text-sm rounded-[7px] mt-[15px] mb-[10px]"
+            >
+              Create account
+            </button>
+            <p class="text-sm text-gray-800">
+              Already have an account?
+              <span class="text-[#fd5c38] cursor-pointer login"
+                >login here</span
+              >
+            </p>
+          </form>
+        </div>
+
+        <div class="section__signIn flex items-center">
+          <div
+            class="form__signIn bg-white py-[20px] px-[20px] rounded-[15px] w-[300px]"
+          >
+            <form action="">
+              <div class="logo__form flex justify-between items-center">
+                <h3 class="text-xl font-medium">Sign In</h3>
+                <div class="close__form cursor-pointer">
+                  <i data-lucide="x" class="w-[18px] h-[18px] text-red-500"></i>
+                </div>
+              </div>
+              <div class="forms mt-[15px] grid gap-[10px]">
+                <div class="email__form flex flex-col gap-[5px]">
+                  <label for="email_2" class="email text-[#2d2d2d]"
+                    >Email:</label
+                  >
+                  <input
+                    id="email_2"
+                    type="text"
+                    placeholder="Enter the email"
+                    name="email"
+                    data-ion="email"
+                    autocomplete="email"
+                    class="rounded-[8px] text-[#4e4d4d] border-[1px] border-[#9b9b9b78] border-solid py-[4px] px-[5px] text-[15px]"
+                  />
+                </div>
+                <div class="password__form flex flex-col gap-[5px]">
+                  <label for="password_2" class="password text-[#2d2d2d]"
+                    >Password:</label
+                  >
+                  <input
+                    id="password_2"
+                    type="password"
+                    placeholder="Enter the password"
+                    name="password"
+                    autocomplete="current-password"
+                    class="rounded-[8px] text-[#4e4d4d] border-[1px] border-[#9b9b9b78] border-solid py-[4px] px-[5px] text-[15px]"
+                  />
+                </div>
+              </div>
+              <button
+                class="submit cursor-pointer bg-[#fd5c38] text-white w-full py-[7px] text-sm rounded-[7px] mt-[15px] mb-[10px]"
+              >
+                Login
+              </button>
+              <p class="text-sm text-gray-800">
+                If create an account?
+                <span class="text-[#fd5c38] cursor-pointer SignUp"
+                  >Sign Up</span
+                >
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="SweetAlert absolute w-full right-[15px] top-[15px] max-w-[263px] py-[15px] px-[20px]"
+      >
+        <div class="title-massage text-white flex items-center gap-[10px]">
+          <i data-lucide="circle-x"></i>
+          <p class="text-[17px]">Form is valid</p>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="details"
+      class="px-[20px] mt-[200px] sm:h-auto sm:my-[150px] sm:px-[40px] lg:px-[60px] xl:px-[150px] mx-auto max-w-[1400px]"
+    >
+      <div class="details__section mb-5 lg:mb-[26px]">
+        <h1 class="text-xl font-medium text-[#fd5c38]">Show details product</h1>
+      </div>
+      <ul class="details__list"></ul>
+    </section>
+
+    <article
+      id="dishes"
+      class="px-[20px] my-[100px] max-w-[1400px] mx-auto sm:px-[40px] lg:px-[60px] xl:px-[150px]"
+    >
+      <div class="dishes__section mb-5">
+        <h1 class="text-xl font-medium text-[#fd5c38]">Top dishes near you</h1>
+      </div>
+      <ul
+        class="dishes__list grid items-center justify-center gap-[17px] mx-auto sm:max-w-[538px] sm:grid-cols-2 md:grid-cols-3 md:max-w-[793px] lg:max-w-[866px]"
+      ></ul>
+    </article>
+
+    <section
+      id="section-search"
+      class="fixed top-0 bg-[#0000006b] h-screen w-full z-10 flex justify-center"
+    >
+      <div class="w-full flex items-center flex-col mt-[150px] gap-[25px]">
+        <button
+          class="close-search h-5 w-5 bg-red-600 flex justify-center items-center rounded"
+        >
+          <i class="h-4 w-4 text-white" data-lucide="x"></i>
+        </button>
+        <div
+          class="prompt-search overflow-auto rounded-[10px] bg-white h-fit py-[16px] px-[20px] max-w-[462px] w-full"
+        >
+          <div
+            class="flex gap-2 items-center pb-[10px] border-b border-[#e7e7e7]"
+          >
+            <i
+              class="w-[16px] h-[16px] text-[#878787]"
+              data-lucide="search"
+            ></i>
+            <input
+              type="text"
+              class="search w-full focus:outline-none text-[#878787] placeholder:text-[#878787] text-[14px]"
+              placeholder="Search for dishes..."
+            />
+          </div>
+          <div class="products pt-[16px] h-auto max-h-[300px] block">
+            <p class="text-center my-[35px]">No recent searches</p>
+            <ul class="product-list grid gap-[11px] flex-col"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="sweet__alert"
+      class="fixed top-[177px] sm:top-[127px] right-[20px] z-10"
+    >
+      <ul class="sweet_alert_list grid gap-[10px]"></ul>
+    </section>
+
+    <section id="go_to_top" class="fixed bottom-[7px] right-[7px]">
+      <button
+        class="flex bg-[#fd5c38] text-white py-[4px] px-[5px] rounded-[4px]"
+      >
+        <i class="h-[18px] w-[18px]" data-lucide="chevron-up"></i>
+      </button>
+    </section>
+
+    <footer id="footer" class="bg-gray-800">
+      <div
+        class="px-[20px] py-[40px] max-w-[1400px] mx-auto sm:px-[40px] lg:px-[60px] xl:px-[150px] lg:py-[60px]"
+      >
+        <div
+          class="footer mx-auto grid gap-[25px] md:gap-[50px] md:grid-cols-2"
+        >
+          <div class="footer__title">
+            <div class="footer__logo mb-[5px]">
+              <a href="index.html">
+                <h1 class="text-[#fd5c38] text-[23px] font-bold lg:text-[26px]">
+                  Tomato.
+                </h1>
+              </a>
+            </div>
+            <p class="text-gray-300 text-[14px] max-w-[426px] md:mt-[18px]">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos non
+              consequuntur dignissimos deserunt quam ab aliquid sit dolore vel
+              obcaecati ipsam sint cumque odio maxime inventore vero, autem
+              laudantium itaque.
+            </p>
+            <div class="footer__icons flex mt-3 gap-[8px]">
+              <i class="text-gray-300 w-4" data-lucide="facebook"></i>
+              <i class="text-gray-300 w-4" data-lucide="instagram"></i>
+              <i class="text-gray-300 w-4" data-lucide="github"></i>
+              <i class="text-gray-300 w-4" data-lucide="linkedin"></i>
+            </div>
+          </div>
+
+          <div class="footer__links grid grid-cols-2">
+            <div class="list__one grid gap-[15px]">
+              <h3 class="text-[17px] text-white">Company</h3>
+              <ul class="footer__list text-gray-300 text-[14px] grid gap-[7px]">
+                <li>Home</li>
+                <li>About us</li>
+                <li>Delivery</li>
+                <li>Privacy policy</li>
+              </ul>
+            </div>
+            <div class="list__two grid gap-[15px]">
+              <h3 class="text-[17px] text-white">Get in touch</h3>
+              <ul class="footer__list text-gray-300 text-[14px] grid gap-[7px]">
+                <li>+0201152341782</li>
+                <li>islam123@gmail.com</li>
+                <li>.</li>
+                <li>.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>

@@ -1,0 +1,1 @@
+import{c as a,i as s,f as o,a as r,s as e,b as t,d as c,g as i,e as n}from"./search-product-CkJgnzyF.js";import{g as m}from"./handle-dishes-list-zhLtrY1D.js";import"./show-sweet-alert-CPHbVcik.js";import"./wishList-management-Cf47GKFr.js";a({icons:s});o();r();m();e();t();c();i();n();
