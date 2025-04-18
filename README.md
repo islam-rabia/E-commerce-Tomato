@@ -1,6 +1,6 @@
 # 🛒 E-commerce Shopping Cart Web App
 
-> Web App built with Vite.js + TailwindCSS + JSONBin  
+> Web App built with Html + Vite.js + JavaScript + TailwindCSS + JSONBin  
 > تجربة تسوّق إلكتروني متكاملة⚡
 
 ![Cover](./public/image/info.png)
