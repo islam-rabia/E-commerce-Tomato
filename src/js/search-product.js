@@ -13,7 +13,7 @@ function searchProduct() {
 }
 
 async function generateDataDashes() {
-  let req = await fetch("https://api.jsonbin.io/v3/b/67f591f58a456b7966852561");
+  let req = await fetch("https://api.jsonbin.io/v3/b/685196d38a456b7966afc4c8");
   let res = await req.json();
   let data = res.record.dishesList;
 

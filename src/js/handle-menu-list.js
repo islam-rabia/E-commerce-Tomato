@@ -2,7 +2,7 @@ import { scrollLeftMenu } from "./scrollLeft-menu.js";
 
 async function generateData() {
   let request = await fetch(
-    "https://api.jsonbin.io/v3/b/67f592138960c979a580ea11"
+    "https://api.jsonbin.io/v3/b/685196ae8561e97a5025e898"
   );
   let response = await request.json();
   let data = response.record.menuList;

@@ -10,8 +10,8 @@ function getDataLocalStorage() {
     handleRenderData(data);
     subTotal();
     total();
+    deleteProductFromLocalStorage();
   }
-  deleteProductFromLocalStorage();
 }
 
 let app = document.querySelector("table tbody");
@@ -67,6 +67,7 @@ function handleRenderData(data) {
 
     if (ele) {
       let id = +ele.getAttribute("data-id");
+
       increment(id);
       changeQuantity(app, id);
       subTotal();
@@ -79,6 +80,7 @@ function handleRenderData(data) {
 
     if (ele) {
       let id = +ele.getAttribute("data-id");
+
       decrement(id);
       changeQuantity(app, id);
       subTotal();

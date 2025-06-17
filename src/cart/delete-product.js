@@ -16,7 +16,6 @@ function deleteProductFromLocalStorage() {
       localStorage.setItem("products", JSON.stringify(wishList));
       handleRenderData(wishList);
 
-      deleteProductFromLocalStorage();
       showSweetAlert("Removed from wishlist!", id, "#f44336");
 
       subTotal();

@@ -16,7 +16,7 @@ let products;
 
 async function generateDishesData() {
   let request = await fetch(
-    "https://api.jsonbin.io/v3/b/67f591f58a456b7966852561"
+    "https://api.jsonbin.io/v3/b/685196d38a456b7966afc4c8"
   );
   let response = await request.json();
   let data = response.record.dishesList;
